@@ -14,6 +14,7 @@ version='7.0.9.2.3rc1'
 
 try:
     os.environ['PATH'] += os.pathsep + site.USER_BASE + '/bin'
+    import setuptools
     import distutils
     from distutils.core import setup
     from distutils.core import Extension
