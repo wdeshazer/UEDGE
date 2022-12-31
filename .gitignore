@@ -5,3 +5,8 @@ build/
 .idea/
 .DS_Store
 *~
+a.out
+pyscripts/__version__*
+uedge.egg-info
+dist
+pyexamples/d3dHsm/gridue
