@@ -1,2 +1,2 @@
 In Python do:
-execfile("runcase.py")
+exec(open(os.environ['PYLIB']+"/runcase.py").read())
