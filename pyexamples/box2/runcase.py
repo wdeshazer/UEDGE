@@ -16,11 +16,11 @@ import os
 
 ##-how to do this better?
 #-in .bashrc: "export PYLIB=/home/umansky1/PyUEDGE/uedge/pylib"
-execfile(os.environ['PYLIB']+"/plotmesh.py")
-execfile(os.environ['PYLIB']+"/plotcontour.py")
-execfile(os.environ['PYLIB']+"/plotvar.py")
-execfile(os.environ['PYLIB']+"/paws.py")
-execfile(os.environ['PYLIB']+"/osfun.py")
+exec(open(os.environ['PYLIB']+"/plotmesh.py").read())
+exec(open(os.environ['PYLIB']+"/plotcontour.py").read())
+exec(open(os.environ['PYLIB']+"/plotvar.py").read())
+exec(open(os.environ['PYLIB']+"/paws.py").read())
+exec(open(os.environ['PYLIB']+"/osfun.py").read())
 #execfile("../../plotmesh.py")
 #execfile("../../pylib/plotvar.py")
 #execfile("../../pylib/plotr.py")
@@ -32,7 +32,7 @@ plt.ion()
 
 
 #-read UEDGE settings
-execfile("box2_in.py")
+exec(open("box2_in.py").read())
 
 
 #-do a quick preliminary run to set all internals
